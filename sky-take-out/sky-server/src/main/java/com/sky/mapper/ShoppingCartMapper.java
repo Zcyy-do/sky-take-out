@@ -1,0 +1,49 @@
+package com.sky.mapper;
+
+import com.sky.entity.ShoppingCart;
+import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
+
+@Mapper
+public interface ShoppingCartMapper {
+
+
+    /**
+     * 根据条件查询购物车数据
+     * @param shoppingCart
+     * @return
+     */
+    List<ShoppingCart> list(ShoppingCart shoppingCart);
+
+    /**
+     * 更新商品数量
+     * @param existShoppingCart
+     */
+    void update(ShoppingCart existShoppingCart);
+
+    /**
+     * 插入购物车数据
+     * @param shoppingCart
+     */
+    void insert(ShoppingCart shoppingCart);
+
+    /**
+     * 根据用户id清空购物车数据
+     * @param userId
+     */
+    void clean(Long userId);
+
+    /**
+     * 根据id删除购物车数据
+     * @param id
+     */
+    void deleteById(Long id);
+
+    /**
+     * 批量插入购物车数据
+     *
+     * @param shoppingCartList
+     */
+    void insertBatch(List<ShoppingCart> shoppingCartList);
+}
