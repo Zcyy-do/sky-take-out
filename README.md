@@ -110,6 +110,7 @@ cd nginx-1.20.2
 start nginx        # Windows
 # 或
 ./nginx            # Linux/Mac
+
 2. 小程序用户端
 解压 mp-weixin.zip 文件
 
