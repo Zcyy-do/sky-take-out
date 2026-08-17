@@ -108,7 +108,7 @@ sky-take-out/                     # Maven 父工程
 bash
 cd nginx-1.20.2
 start nginx        # Windows
-# 或
+或
 ./nginx            # Linux/Mac
 
 2. 小程序用户端
